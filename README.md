@@ -3,7 +3,36 @@
 ![Logo](https://i.ytimg.com/vi/Cx5XGOQVx-4/maxresdefault.jpg)
 
 
-## coming soon 
+# coming soon 
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/qwel-exe/Duck-Hunt-22.git
+```
+
+Go to the project directory
+
+```bash
+  cd Duck-Hunt-22
+```
+
+Install dependencies
+
+```bash
+  pip install pygame
+```
+
+Start the server
+
+```bash
+  python main.py
+```
+
+
 
 ## Contributing
 Contributions are always welcome!
