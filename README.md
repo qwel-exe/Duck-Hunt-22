@@ -1,5 +1,4 @@
-# Duck-Hunt-22
-Remake of Duck Hunt with a small twist :)
+# Remake of Duck Hunt with a small twist :)
 
 ![Logo](https://i.ytimg.com/vi/Cx5XGOQVx-4/maxresdefault.jpg)
 
