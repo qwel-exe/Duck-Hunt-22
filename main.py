@@ -25,22 +25,25 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, pos_x, pos_y):
         super().__init__()
         self.attack_animation = False
-        self.sprites = []
-        self.sprites.append(pygame.image.load("media/Dog/img1.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img2.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img3.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img4.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img5.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img1.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img2.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img3.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img4.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img5.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img6.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img6.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img6.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img7.png"))
-        self.sprites.append(pygame.image.load("media/Dog/img8.png"))
+
+        self.sprites = [
+            pygame.image.load("media/Dog/img1.png"),
+            pygame.image.load("media/Dog/img2.png"),
+            pygame.image.load("media/Dog/img3.png"),
+            pygame.image.load("media/Dog/img4.png"),
+            pygame.image.load("media/Dog/img5.png"),
+            pygame.image.load("media/Dog/img1.png"),
+            pygame.image.load("media/Dog/img2.png"),
+            pygame.image.load("media/Dog/img3.png"),
+            pygame.image.load("media/Dog/img4.png"),
+            pygame.image.load("media/Dog/img5.png"),
+            pygame.image.load("media/Dog/img6.png"),
+            pygame.image.load("media/Dog/img6.png"),
+            pygame.image.load("media/Dog/img6.png"),
+            pygame.image.load("media/Dog/img7.png"),
+            pygame.image.load("media/Dog/img8.png"),
+        ]
+
         self.current_sprite = 0
         self.image = self.sprites[self.current_sprite]
 
