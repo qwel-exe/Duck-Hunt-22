@@ -77,7 +77,7 @@ class Player(pygame.sprite.Sprite):
         """
         Function to handle update events
         """
-        if self.attack_animation == True:
+        if self.attack_animation:
             self.current_sprite += speed
             if int(self.current_sprite) >= len(self.sprites):
                 self.current_sprite = 0
