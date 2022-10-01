@@ -1,3 +1,9 @@
+"""
+Main source file for the Duck Hunt Game
+"""
+
+# pylint: disable=wildcard-import, wrong-import-position, no-member, invalid-name, undefined-variable, unused-wildcard-import
+
 import sys
 
 import pygame
@@ -14,6 +20,10 @@ fullscreen = False
 
 
 class Background(pygame.sprite.Sprite):
+    """
+    Main class for the game background
+    """
+
     def __init__(self, image_file, location):
         pygame.sprite.Sprite.__init__(self)  # call Sprite initializer
         self.image = pygame.image.load(image_file)
@@ -22,7 +32,14 @@ class Background(pygame.sprite.Sprite):
 
 
 class Player(pygame.sprite.Sprite):
+    """
+    Main class for the game player
+    """
+
     def __init__(self, pos_x, pos_y):
+        """
+        Function to handle events and sprites called on class init
+        """
         super().__init__()
         self.attack_animation = False
 
@@ -51,9 +68,15 @@ class Player(pygame.sprite.Sprite):
         self.rect.left, self.rect.top = [pos_x, pos_y]
 
     def attack(self):
+        """
+        Function to handle attack events
+        """
         self.attack_animation = True
 
     def update(self, speed):
+        """
+        Function to handle update events
+        """
         if self.attack_animation == True:
             self.current_sprite += speed
             if int(self.current_sprite) >= len(self.sprites):
